@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семейные ценности</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- Шапка -->
+<header>
+    <div class="header-content">
+        <img src="/img/лого2.png" alt="Логотип" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Программы</a></li>
+                <li><a href="#services">Выставки</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="contacts">
+            <p>г. Вологда, ул. Пушкина, д. 1 | Тел: +7 (123) 456-78-90 | Email: info@example.com</p>
+        </div>
+    </div>
+</header>
+
+
+<!--Слайдер-->
+
+<a name="home" ></a>
+
+
+
+<div style='text-align:center;'>
+<h3 style='text-align: center;margin: 0px 0px;border-bottom: 2px solid #666; display:inline-block;padding-bottom:10px'>Bootstrap Carousel Fade In & FadeOut</h3>
+</div>
+    <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">  
+                <div class="carousel-caption">
+                  <h3>Информирование</h3>
+                  <p>Предоставление актуальной информации о семейных ценностях и их значении для общества</p>
+                </div>
+            </div>
+            <div class="item"> 
+                <div class="carousel-caption">
+                  <h3>Формирование сообщества</h3>
+                  <p>Содействие в создании сильного сообщества, объединенного общими ценностями</p>
+                </div>
+            </div>
+            <div class="item"> 
+                <div class="carousel-caption">
+                  <h3>Поддержка инициатив</h3>
+                  <p>Оказание помощи инициативам, направленным на поддержку семейных ценностей</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+
+  <!-- 2 экран -->
+  <a name="about" ></a>
+
+
+
+
+
+
+  		<!-- программы -->
+      <section id="services">
+        <div class="services">
+          <h1>ПРОГРАММЫ</h1>
+          <div class="cen">
+
+
+            <div class="service">
+              <i class="fas fa-utensils"></i>
+              <h2>Программа "Семейный очаг"</h2>
+              <p>
+                Программа направлена на поддержку многодетных семей, предоставление льгот и субсидий на жильё и образование.
+              </p>
+
+              <a onclick="document.getElementById('modal1').style.display='block'">Подробнее</a>
+
+
+
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('modal1').style.display='none'">&times;</span>
+                  <p>"Семейный очаг" предлагает комплексную поддержку семьям, включая финансовую помощь для улучшения жилищных условий, скидки на коммунальные услуги и образовательные программы для детей.</p>
+                </div>
+              </div>
+
+            </div>
+
+
+
+  
+            <div class="service">
+              <i class="fas fa-utensils"></i>
+              <h2>Фестиваль "Семейные узы"</h2>
+              <p>
+                Ежегодный фестиваль, включающий конкурсы и мастер-классы для укрепления семейных традиций.
+              </p>
+
+              <a onclick="document.getElementById('modal2').style.display='block'">Подробнее</a>
+
+
+
+              <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('modal2').style.display='none'">&times;</span>
+                  <p>"Семейные узы" это праздник культуры и традиций, где семьи могут участвовать в различных активностях, обмениваться опытом и укреплять связи.</p>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+            <div class="service">
+              <i class="fas fa-utensils"></i>
+              <h2>Образовательный проект "Родительская академия"</h2>
+              <p>
+                Серия лекций и семинаров для родителей по вопросам воспитания и поддержки семейных ценностей.
+              </p>
+
+              <a onclick="document.getElementById('modal3').style.display='block'">Подробнее</a>
+
+
+
+              <div id="modal3" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('modal3').style.display='none'">&times;</span>
+                  <p>Проект предоставляет родителям знания и инструменты для эффективного воспитания детей в духе традиционных ценностей.</p>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="service">
+              <i class="fas fa-utensils"></i>
+              <h2>Инициатива "Здоровая семья"</h2>
+              <p>
+                Программа по повышению уровня здоровья семей через медицинские осмотры и консультации
+              </p>
+
+              <a onclick="document.getElementById('modal4').style.display='block'">Подробнее</a>
+
+
+
+              <div id="modal4" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('modal4').style.display='none'">&times;</span>
+                  <p>"Здоровая семья" фокусируется на профилактике заболеваний и продвигает здоровый образ жизни среди всех членов семьи.</p>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+            <div class="service">
+              <i class="fas fa-utensils"></i>
+              <h2>Кампания "Семья и работа"</h2>
+              <p>
+                Создание условий для совмещения работы и семейной жизни.
+              </p>
+
+              <a onclick="document.getElementById('modal5').style.display='block'">Подробнее</a>
+
+
+
+              <div id="modal5" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('modal5').style.display='none'">&times;</span>
+                  <p>Инициатива направлена на поддержку рабочих родителей, предлагая гибкие графики и возможности для дистанционной работы.</p>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="service">
+              <i class="fas fa-utensils"></i>
+              <h2>Проект "История моей семьи"</h2>
+              <p>
+                Сбор и сохранение историй семей для передачи будущим поколениям.
+              </p>
+
+              <a onclick="document.getElementById('modal6').style.display='block'">Подробнее</a>
+
+
+
+              <div id="modal6" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('modal6').style.display='none'">&times;</span>
+                  <p>Этот проект призван сохранить уникальные семейные истории, фотографии и традиции, создавая бесценный архив для потомков. </p>
+                </div>
+              </div>
+
+            </div>
+
+
+  
+  
+          </div>
+        </div>
+      </section>
+
+
+ <!-- 3 экран -->
+ <a name="services" ></a>
+  <!-- Секция мероприятий -->
+
+  <div class="pack">
+		<h1>ФЕСТИВАЛИ</h1>
+		</div>
+		<section id="packages">
+			<div class="box">
+				<div class="content">
+					<div>
+						<h2>Выставка "Семейное древо"</h2>
+						<p>
+							Интерактивная выставка, посвященная истории и традициям семей.
+        Посетители смогут создать своё семейное древо, узнать о генеалогии и обменяться историями о своих предках.
+						</p>
+						<a onclick="document.getElementById('registerModal').style.display='block'">Узнать больше</a>
+					</div>
+				</div>
+				<img src="img/baner1.jpg">
+			</div>
+			<div class="box">
+				<div class="content">
+					<div>
+						<h2>Мероприятие "День семейных игр"</h2>
+						<p>
+							Семейный праздник с настольными и активными играми.
+           День, когда семьи могут собраться вместе, чтобы играть в различные игры и укреплять семейные узы.
+						</p>
+						<a onclick="document.getElementById('registerModal').style.display='block'">Узнать больше</a>
+					</div>
+				</div>
+				<img src="img/baner2.jpg">
+			</div>
+			<div class="box">
+				<div class="content">
+					<div>
+						<h2>Фестиваль "Кулинарное наследие"</h2>
+						<p>
+							Фестиваль, демонстрирующий семейные рецепты и кулинарные традиции.
+           Семьи представят свои уникальные рецепты, проведут мастер-классы и поделятся секретами кулинарного искусства.
+						</p>
+						<a onclick="document.getElementById('registerModal').style.display='block'">Узнать больше</a>
+					</div>
+				</div>
+				<img src="img/baner3.jpg">
+			</div>
+      <div class="box">
+				<div class="content">
+					<div>
+						<h2>Конференция "Родительство и традиции"</h2>
+						<p>
+							Образовательная конференция для обсуждения родительства в контексте традиций.
+           Эксперты и родители обсудят, как сохранять и передавать семейные ценности в современном мире.
+						</p>
+						<a onclick="document.getElementById('registerModal').style.display='block'">Узнать больше</a>
+					</div>
+				</div>
+				<img src="img/baner4.jfif">
+			</div>
+		</section>
+		
+
+
+
+
+
+
+
+<!-- Модальное окно регистрации -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="document.getElementById('registerModal').style.display='none'">&times;</span>
+      <form id="registrationForm">
+          <label for="fullName">ФИО:</label>
+          <input type="text" id="fullName" name="fullName" required>
+          
+          <label for="participationType">Форма участия:</label>
+          <select id="participationType" name="participationType" required>
+              <option value="offline">Очно</option>
+              <option value="online">Онлайн</option>
+          </select>
+
+          <label for="participationType">Фестиваль:</label>
+          <select id="participationType" name="participationType" required>
+              <option value="offline">"Семейное древо"</option>
+              <option value="online">"День семейных игр"</option>
+              <option value="offline">"Кулинарное наследие"</option>
+              <option value="online">"Родительство и традиции"</option>
+          </select>
+
+
+          
+          <label for="date">Дата:</label>
+          <input type="date" id="date" name="date" required>
+          
+          <div class="buttons">
+              <button type="reset">Очистить форму</button>
+              <button type="submit">Зарегистрироваться</button>
+              <button type="button" onclick="document.getElementById('registerModal').style.display='none'">Закрыть</button>
+          </div>
+      </form>
+  </div>
+</div>
+
+
+<!-- 4 экран Футер -->
+
+
+<a name="contact" ></a>
+
+<footer>
+    <div class="footer-content">
+        <img src="/img/лого2.png" alt="Логотип" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Программы</a></li>
+                <li><a href="#services">Выставки</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="contacts">
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>Адрес: г. Вологда, ул. Пушкина, д. 1</p>
+            <p>Email: info@example.com</p>
+        </div>
+        <div class="social-links">
+            <!-- Иконки социальных сетей -->
+            <a href="https://facebook.com" class="social-icon" ><img src="img/tg.png" width="100" height="100" width="600"></a>
+            <a href="https://twitter.com" class="social-icon"><img src="img/vk.png" width="100" height="100" width="600"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Рекункова Алёна Владимировна. Колледж связи и информационных технологий "Разработчик веб и мультимедийных приложений"</p>
+        <button id="scrollToTopBtn">Вверх</button>
+    </div>
+</footer>
+
+
+
+  
+  <script>
+
+    // 1 экран шапка
+
+window.onscroll = function() { myFunction() };
+
+var header = document.querySelector("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+$('#carouselFade').carousel();
+
+
+    // 2 экран
+  // Закрытие модального окна при клике вне его области
+  window.onclick = function(event) {
+    if (event.target.className === "modal") {
+      event.target.style.display = "none";
+    }
+  }
+
+
+// 3 экран
+
+  document.getElementById('registrationForm').onsubmit = function(event) {
+    var fullName = document.getElementById('fullName').value;
+    var participationType = document.getElementById('participationType').value;
+    var date = document.getElementById('date').value;
+    
+    if (!fullName || !participationType || !date) {
+        alert('Пожалуйста, заполните все поля.');
+        event.preventDefault();
+    }
+};
+
+
+// 4 экран подвал
+document.getElementById('scrollToTopBtn').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+  </script>
+    
+</body>
+</html>
